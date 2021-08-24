@@ -1,0 +1,295 @@
+/*Estilos generales*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+/*===========Fuente Dark-theme============*/
+@font-face { 
+    font-family: "Dark";
+    src: url("../fonts/BLOODY.TTF");
+}
+/*===========Fuente Fire-theme============*/
+@font-face { 
+    font-family: "Fire";
+    src: url("../fonts/Adventure_Time.ttf");
+}
+/*===========Fuente Nature-theme============*/
+@font-face { 
+    font-family: "Nature";
+    src: url("../fonts/28-Days-Later.ttf");
+}
+/*===========Fuente Ocean-theme============*/
+@font-face { 
+    font-family: "Ocean";
+    src: url("../fonts/Pacifico.ttf");
+}
+/*===========Fuente Sky-theme============*/
+@font-face { 
+    font-family: "Sky";
+    src: url("../fonts/Carnivalee.ttf");
+}
+/*===========Fuente para toda la pagina============*/
+@font-face { 
+    font-family: "Myfont";
+    src: url("../fonts/SourceSansPro-Regular.otf");
+}
+/*===========Fuente para títulos============*/
+@font-face { 
+    font-family: "MyfontTittles";
+    src: url("../fonts/Kingthings_Calligraphica.ttf");
+}
+.textTittles{
+    font-family: "MyfontTittles";
+}
+body{
+    font-family: "Myfont";
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+      background-image: url(../img/mitsubishi.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-color: #fff;
+    padding-top: 70px;
+}
+nav{
+    width: 100%;
+    height: 70px;
+    margin: 0px;
+    padding:0px;
+    background-color: rgba(89, 42, 15,1);
+    color: #fff;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 71;
+}
+section{
+    width: 100%;
+    margin: 0;
+    padding: 90px 0;
+}
+footer{
+  background-color: rgba(89, 42, 15,1);
+  color: #fff;
+  margin: 0;
+  padding: 40px 0;
+  width: 100%;
+}
+.center-box{
+    margin: 0px auto;
+}
+hr, .hrcolor {
+height: 1px;
+border: 0;
+color: #333;
+background-color: rgba(0, 0, 0, 0.3);
+}
+/*Estilos barra de menu*/
+ul#menu-scroll{
+    width: 70%;
+    height: 70px;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    background-color: transparent;
+}
+a.container-link{
+    background-color: transparent;
+    height: 70px;
+    width: 16.6%;
+    float: left;
+    padding-top: 25px;
+}
+a.container-link:hover,a.container-link:focus{
+    text-decoration: none;
+    outline: none;
+}
+p.icon{
+    text-align: center;
+    color: #fff;
+    opacity: .5;
+    margin-bottom: 15px;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+}
+div.nav-indicator{
+    height: 10px;
+    bottom: 0px;
+    right: 0px;
+    background-color: transparent;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+}
+a.container-link:hover div.nav-indicator{
+    background-color: rgba(211, 84, 0,1.0);
+}
+a.container-link:hover p.icon{
+    opacity: 1;
+}
+p#nav-tex{
+    width: 30%;
+    height: 70px;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    background-color: transparent;
+    text-align: center;
+    padding: 10px;
+    font-size: 2.2em;
+}
+#button-menu-mobil{
+  position: absolute;
+  right: 4%;
+  top: 12px;
+  color: #fff;
+  border: none;
+  background: transparent;
+    font-size: 1.5em;
+}
+#button-menu-mobil:focus{
+  outline: none;
+}
+#button-menu-mobil:active{
+  background-color: transparent;
+  box-shadow: none;
+}
+div#container-menu-mobile{
+    width: 320px;
+    background-color: rgba(89, 42, 15,1);
+    height: 100%;
+    position: fixed;
+    left: -320px;
+    z-index: 72;
+    border-top: solid 1px rgba(255,255,255,.2);
+    color: #fff;
+    
+}
+a.link-mobile-menu{
+    display: block;
+    margin: 0px;
+    padding: 10px 0px;
+    color: #fff;
+    -webkit-transition: opacity 1s;
+    -webkit-transition: background-color 1s;
+    -moz-transition: opacity 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: opacity 1s;
+    -ms-transition: background-color 1s;
+    opacity: .5;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+a.link-mobile-menu:hover{
+    text-decoration: none;
+    opacity: 1;
+    background-color: rgba(211, 84, 0,.9);
+    border: none;
+}
+ul#ul-Link-nenu-mobile a:first-child {
+   border-top: 1px solid rgba(255,255,255,.2);
+}
+button#button-close-menu-mobile{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    right: 7px;
+    top: 4px;
+}
+button#button-close-menu-mobile:focus, button#button-close-menu-mobile:active{
+    outline: none;
+}
+/*Estilos Paleta de temas*/
+#color-palette{
+  width: 120px;
+  height: 250px;
+  color: #fff;
+  position: fixed;
+  top: 25%;
+  right: -88px;
+  z-index: 15;
+}
+#icon-palette{
+  width: 32px;
+  height: 32px;
+  float: left;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(89, 42, 15,.9);
+  border-radius: 3px 0 0 3px;
+}
+#img-icon-palette{
+  width: 27px;
+  height: 27px;
+  background-image: url(../img/icon-color-palette.png);
+  margin: 2.4px;
+  cursor: pointer;
+}
+#tittle-palette{
+    width: 100%; 
+    height: 32px; 
+    padding-top:5px; 
+    background-color: rgba(89, 42, 15,.9); 
+    margin:0px;
+}
+#container-palette{
+  width: 88px;
+  height: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+#container-themes{
+  width: 100%;
+  height: 218px;
+  background-color: rgba(89, 42, 15,.9);
+  margin: 0px;
+  padding: 0px;
+  border-radius: 0 0 0 3px;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+.theme{
+  cursor: pointer;
+  width: 37px;
+  height: 37px;
+  margin: 5px auto;
+  border-radius: 4px;
+}
+#dark-theme{
+  background-image: url(../img/theme-dark.png);
+}
+#ocean-theme{
+  background-image: url(../img/theme-ocean.png);
+}
+#fire-theme{
+  background-image: url(../img/theme-fire.png);
+}
+#sky-theme{
+  background-image: url(../img/theme-sky.png);
+}
+#nature-theme{
+  background-image: url(../img/theme-nature.png);
+}
+/**************** body content***************/
+.body-content{
+    background-color  : rgba(236, 240, 241,.9);
+    width             : 100%;
+    margin            : 0px;
+    padding           : 0px;
+}
+.description{
+    color             : #fff;
+    border-radius     : 7px;
+    padding           : 20px;
+    background-color  : rgba(0,0,0,.8);
+}
+.subdescription{
+    color  : #000;
+}
